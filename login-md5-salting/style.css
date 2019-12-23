@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	background-image: linear-gradient(45deg, black 50%, transparent);
+	font-family: consolas;
+}
+.login-box {
+	background: rgba(255,255,255,0.2);    
+	width: 400px;
+	margin: 0 auto;
+	padding: 3rem 1rem;
+	border-radius: 3px;
+	margin-top: 9rem;
+}
+.login-box form {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	margin: 0 auto;
+}
+.login-box input {
+	border: none;
+	margin-bottom: 1rem;
+	min-height: 45px;
+	border-radius: 2px;
+	font-size: 16px;
+	font-family: consolas;
+}
+.login-box input:last-child {
+	margin-bottom: 0;
+}
+#username, #password {
+	padding-left: 7px;
+}
+#login {
+	cursor: pointer;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	background: #80d8dc;
+	font-weight: 600;
+}
+#login:hover {
+	background: #c0fcff;
+}

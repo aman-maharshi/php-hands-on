@@ -24,7 +24,14 @@
 				
 				$token = md5("$salt1$pw$salt2");
 				if ($token == $row['password']) {
-					header('location: success.php');
+					session_start();
+					$_SESSION['name'] = $row['name'];
+					$_SESSION['username'] = $row['username'];
+					echo "Hi ".$row['name'].", you are now logged in as ".$row['username'];
+					die("<p><a href='success.php'>Click here to continue</p>");
+				}
+				else {
+					die("Invalid username / password");
 				}
 			}
 			else {
